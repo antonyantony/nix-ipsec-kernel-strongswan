@@ -2,11 +2,11 @@
 	buildLinux, lib, ...
 } @ args:
 buildLinux (args // rec {
-  version = "6.4.0-ipsec";
-  modDirVersion = "6.4.0";
+  version = "6.4.0-rc1";
+  modDirVersion = "6.4.0-rc1";
 
   src = fetchGit {
-    url = "https://git.kernel.org/pub/scm/linux/kernel/git/klassert/ipsec.git";
+    url = "https://git.kernel.org/pub/scm/linux/kernel/git/klassert/ipsec-next.git";
     shallow = true;
     ref = "testing";
   };
